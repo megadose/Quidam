@@ -19,6 +19,8 @@ python3 setup.py install
 ```python
 from quidam import *
 print(instagram("test"))
+print(twitter("test"))
+print(github("test"))
 ```
 ## 📚 Exemple
 ```bash
