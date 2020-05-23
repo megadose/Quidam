@@ -1,6 +1,6 @@
-# Hibp python
+# Quidam 
 # Educational purposes only
-Permet d'utiliser l'api de HIBP
+Quidam permet de recupérer des informations grace a la fonction mot de passe oubliée de certains sites
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
