@@ -18,7 +18,7 @@ if args.module=="instagram":
     if '"status"' not in info:
         print("Email extract with instagram of "+args.username+": "+info)
     else:
-        print(args.username+" account not found")
+        print(args.username+" account not found in instagram")
 
 elif args.module=="twitter":
     info = twitter(args.username)
@@ -28,7 +28,7 @@ elif args.module=="twitter":
     elif len(info)==1 :
         print("Email extract with twitter of "+args.username+": "+info["email"])
     else:
-        print("Not informations found")
+        print("Not informations found in twitter")
 
 elif args.module=="github":
     info = github(args.username)
