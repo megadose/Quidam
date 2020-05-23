@@ -21,10 +21,11 @@ from quidam import *
 print(instagram("test"))
 ```
 ## 📚 Exemple
-### Demo
-![](demo.gif)
 ```bash
 python3 Quidam.py -u test -m all
 ```
+### Demo
+![](demo.gif)
+
 ## 📝 License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.fr.html)
