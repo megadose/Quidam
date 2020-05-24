@@ -1,6 +1,6 @@
 # Quidam 
 # Educational purposes only
-Quidam permet de recupérer des informations grace a la fonction mot de passe oubliée de certains sites
+Quidam allows you to retrieve information thanks to the forgotten password function of some sites.
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
@@ -22,23 +22,23 @@ print(instagram("test"))
 print(twitter("test"))
 print(github("test"))
 ```
-## 📚 Exemple
+## 📚 Example
 ```bash
 python3 Quidam.py -u test -m all
 ```
-## Type d'informations par site:
-- Twitter : Si la personne n'a pas désactivé l'option email et les 2 derniers chiffres de son numéro de téléphone ansi que une partie de l'email le nombre d'étoile ```*``` est le bon nombre correspondant a l'email
-- Instagram : Récupère toujours une partie de l'email avec le bon nombre d'étoiles ainsi que le nom de domaine complet
-- Github : Va regarder les commit récents grace à l'api il va donc donnez l'email complet ainsi que le nom associé à l'adresse email
+## Type of information per site:
+- Twitter: If the person has not disabled the email option and the last 2 digits of their phone number as well as part of the email the star number ```*`` is the right number corresponding to the email.
+- Instagram : Always retrieves a part of the email with the right number of stars and the full domain name
+- Github: Go look at recent commits with the api so give the full email and the name associated with the email address.
 
 ## Rate limit:
-- Twitter rate limit si vous le faite trop rapidement il suffit de changer d'Ip
-- Instagram rate limit si vous le faite trop rapidement il suffit de changer d'ip
-- Github pas de rate limit 
+- Twitter rate limit if you do it too fast just change IPs
+- Instagram rate limit if you do it too fast just change ip
+- Github no spleen limit 
 ### Demo
 ![](demo.gif)
 
-## Exemple de projet : [Quidam Maltego](https://github.com/megadose/quidam-maltego)
+## Project example : [Quidam Maltego](https://github.com/megadose/quidam-maltego)
 
 ## 📝 License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.fr.html)
