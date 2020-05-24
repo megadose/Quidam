@@ -26,6 +26,15 @@ print(github("test"))
 ```bash
 python3 Quidam.py -u test -m all
 ```
+## Type d'informations par site:
+- Twitter : Si la personne n'a pas désactivé l'option email et les 2 derniers chiffres de son numéro de téléphone ansi que une partie de l'email le nombre d'étoile ```*``` est le bon nombre correspondant a l'email
+- Instagram : Récupère toujours une partie de l'email avec le bon nombre d'étoiles ainsi que le nom de domaine complet
+- Github : Va regarder les commit récents grace à l'api il va donc donnez l'email complet ainsi que le nom associé à l'adresse email
+
+## Rate limit:
+- Twitter rate limit si vous le faite trop rapidement il suffit de changer d'Ip
+- Instagram rate limit si vous le faite trop rapidement il suffit de changer d'ip
+- Github pas de rate limit 
 ### Demo
 ![](demo.gif)
 
