@@ -28,7 +28,7 @@ print(github("test"))
 python3 Quidam.py -u test -m all
 ```
 ## Type of information per site:
-- Twitter: If the person has not disabled the email option and the last 2 digits of their phone number as well as part of the email the star number ```*`` is the right number corresponding to the email.
+- Twitter: If the person has not disabled the email option and the last 2 digits of their phone number as well as part of the email the star number ```*``` is the right number corresponding to the email.
 - Instagram : Always retrieves a part of the email with the right number of stars and the full domain name
 - Github: Go look at recent commits with the api so give the full email and the name associated with the email address.
 
