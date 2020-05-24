@@ -1,5 +1,6 @@
 # Quidam 
 # Educational purposes only
+### If you have any suggestions, please do not hesitate to contact us. 
 Quidam allows you to retrieve information thanks to the forgotten password function of some sites.
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
