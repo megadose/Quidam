@@ -4,12 +4,12 @@ Quidam allows you to retrieve information thanks to the forgotten password funct
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-## 💡 Prérequis
+## 💡 Prerequisite
    [Python 2/3](https://www.python.org/downloads/release/python-370/)
 ## 🛠️ Installation
-### Avec PyPI
+### With PyPI
 ```pip3 install Quidam```
-### Avec github
+### With Github
 ```bash
 git clone https://github.com/megadose/Quidam.git
 cd Quidam/
@@ -32,9 +32,9 @@ python3 Quidam.py -u test -m all
 - Github: Go look at recent commits with the api so give the full email and the name associated with the email address.
 
 ## Rate limit:
-- Twitter rate limit if you do it too fast just change IPs
-- Instagram rate limit if you do it too fast just change ip
-- Github no spleen limit 
+- Twitter rate limit if you do it too fast just change IP
+- Instagram rate limit if you do it too fast just change IP
+- Github no rate limit 
 ### Demo
 ![](demo.gif)
 
