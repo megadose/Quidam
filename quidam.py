@@ -2,6 +2,7 @@
 import argparse
 from quidam import *
 
+emailsFilesName="emails.txt"
 listModules = ["instagram","twitter","github"]
 
 parser = argparse.ArgumentParser()
@@ -12,6 +13,19 @@ args = parser.parse_args()
 
 #print("Quidam get email with recovery password")
 print("You select "+args.module)
+
+def possibleDomain(emailInfo):
+    EmailsFile = open(emailsFilesName, 'r')
+    Emails = EmailsFile.readlines()
+    EmailsFile.close()
+    print("Possible email : ")
+    emailProvider = emailInfo.split("@")[1]
+    for email in Emails:
+        email=email.replace("\n","")
+        if emailProvider[0]==email[0]:
+            if len(emailProvider.split(".")[0])==len(email.split(".")[0]):
+                print(emailInfo.split("@")[0]+"@"+email)
+
 
 if args.module=="instagram":
     info = instagram(args.username)
@@ -28,8 +42,10 @@ elif args.module=="twitter":
     if len(info)==2:
         print("The end of the phone number in twitter of "+args.username+": "+str(info["phone"]))
         print("Email extract with twitter of "+args.username+": "+info["email"])
+        possibleDomain(info["email"])
     elif len(info)==1 :
         print("Email extract with twitter of "+args.username+": "+info["email"])
+        possibleDomain(info["email"])
     else:
         print("Not informations found in twitter")
 
@@ -52,8 +68,10 @@ elif args.module=="all":
     if len(info)==2:
         print("The end of the phone number in twitter of "+args.username+": "+str(info["phone"]))
         print("Email extract with twitter of "+args.username+": "+info["email"])
+        possibleDomain(info["email"])
     elif len(info)==1 :
         print("Email extract with twitter of "+args.username+": "+info["email"])
+        possibleDomain(info["email"])
     else:
         print("Not informations found")
     info = github(args.username)
