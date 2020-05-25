@@ -18,9 +18,11 @@ def instagram(username):
     r = s.get('https://www.instagram.com/accounts/password/reset/?hl=fr')
     #print(r.content)
     cookies = s.cookies.get_dict()
-    if "csrftoken" not in  cookies:
-        return("This IP are blocked from instagram. \nPlease change your ip")
-    crsf = cookies["csrftoken"]
+
+    if "csrftoken" not in cookies:
+        crsf = str(r.content).split('{"csrf_token":"')[1].split('"')[0]
+    else:
+        crsf = cookies["csrftoken"]
 
     headers = {
         'User-Agent': ua.random,
