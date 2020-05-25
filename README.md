@@ -34,7 +34,7 @@ python3 Quidam.py -u test -m all
 
 ## Rate limit:
 - Twitter rate limit if you do it too fast just change IP
-- Instagram rate limit if you do it too fast just change IP
+- Instagram no rate limit
 - Github no rate limit 
 ### Demo
 ![](demo.gif)
