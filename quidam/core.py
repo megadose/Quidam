@@ -19,8 +19,7 @@ def instagram(username):
     #print(r.content)
     cookies = s.cookies.get_dict()
     if "csrftoken" not in  cookies:
-        print("This IP are blocked from instagram. \nPlease change your ip")
-        return("")
+        return("This IP are blocked from instagram. \nPlease change your ip")
     crsf = cookies["csrftoken"]
 
     headers = {
