@@ -16,7 +16,10 @@ print("You select "+args.module)
 if args.module=="instagram":
     info = instagram(args.username)
     if '"status"' not in info:
-        print("Email extract with instagram of "+args.username+": "+info)
+        if 'This IP are blocked from instagram' not in info:
+            print("Email extract with instagram of "+args.username+": "+info)
+        else:
+            print(info)
     else:
         print(args.username+" account not found in instagram")
 
