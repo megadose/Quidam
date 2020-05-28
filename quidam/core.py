@@ -51,8 +51,10 @@ def instagram(username):
     response = requests.post('https://www.instagram.com/accounts/account_recovery_send_ajax/', headers=headers, params=params, cookies=cookies, data=data)
     emailScrape = response.text.split("pour")[0].split(" ")
     email = emailScrape[len(emailScrape)-2]
-    return(email)
-
+    if len(email) > 5:
+        return(email)
+    else:
+        return("NULL")
 def twitter(username):
     info = evolut(username)
     return(info)
