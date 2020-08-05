@@ -3,9 +3,8 @@ import requests
 import json
 from fake_useragent import UserAgent
 from evolut import evolut
-
+ua = UserAgent(verify_ssl=False)
 def instagram(username):
-    ua = UserAgent()
     s = requests.Session()
     s.headers = {
     'User-Agent': ua.random,
@@ -61,7 +60,6 @@ def twitter(username):
 
 def github(username):
     emails = []
-    ua = UserAgent()
     s = requests.Session()
     s.headers = {
     'User-Agent': ua.random,
