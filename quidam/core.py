@@ -71,12 +71,11 @@ def github(username):
     }
     r = s.get("https://api.github.com/users/"+username+"/events")
     r = json.loads(r.text)
-    if str(r) !="{'message': 'Not Found', 'documentation_url': 'https://developer.github.com/v3/activity/events/#list-events-performed-by-a-user'}":
-        for i in r:
-            if "commits" in i["payload"].keys():
-                for e in i["payload"]["commits"]:
-                    if e["author"] not in emails:
-                        emails.append(e["author"])
-        return(emails)
-    else:
+    if r.get('message', '') == 'Not Found':
         return()
+    for i in r:
+        if "commits" in i["payload"].keys():
+            for e in i["payload"]["commits"]:
+                if e["author"] not in emails:
+                    emails.append(e["author"])
+            return(emails)
