@@ -1,10 +1,9 @@
 # Quidam 
+![PyPI](https://img.shields.io/pypi/v/Quidam) ![PyPI - Week](https://img.shields.io/pypi/dw/Quidam) ![PyPI - Downloads](https://static.pepy.tech/badge/Quidam) ![PyPI - License](https://img.shields.io/pypi/l/Quidam)
 #### For BTC Donations : 1FHDM49QfZX6pJmhjLE5tB2K6CaTLMZpXZ
-# Educational purposes only
-### If you have any suggestions, please do not hesitate to contact us. 
+## Educational purposes only
 Quidam allows you to retrieve information thanks to the forgotten password function of some sites.
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## 💡 Prerequisite
    [Python 2/3](https://www.python.org/downloads/release/python-370/)
