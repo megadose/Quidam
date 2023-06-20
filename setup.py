@@ -7,7 +7,7 @@ setup(
     version="1.24",
     packages=find_packages(),
     author="megadose",
-    install_requires=["requests","fake_useragent","evolut","argparse"],
+    install_requires=["requests","fake_useragent","argparse"],
     description="Permet de recupérer des informations grace a la fonction mot de passe oubliée de certains sites",
     long_description="",
     include_package_data=True,
