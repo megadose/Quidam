@@ -3,7 +3,7 @@ import requests
 import json
 from fake_useragent import UserAgent
 from evolut import evolut
-ua = UserAgent(verify_ssl=False)
+ua = UserAgent()
 def instagram(username):
     s = requests.Session()
     s.headers = {
